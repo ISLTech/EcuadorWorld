@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Acme&family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+@keyframes hero-gradient-animation {
+    0% {
+        --x-0: 98%;
+        --s-start-0: 5%;
+        --s-end-0: 61.257148618684276%;
+        --y-0: 0%;
+        --c-0: hsla(297.529395608341, 94%, 30%, 1);
+        --y-1: 61%;
+        --s-start-1: 9%;
+        --s-end-1: 55%;
+        --x-1: 116%;
+        --c-1: hsla(331.2, 52%, 37%, 1);
+        --y-2: 2%;
+        --s-start-2: 5%;
+        --s-end-2: 52%;
+        --c-2: hsla(32.635983263598334, 100%, 46%, 1);
+        --x-2: 32%;
+        --y-3: 7%;
+        --x-3: 24%;
+        --c-3: hsla(237.23076923076923, 38%, 32%, 1);
+        --s-start-3: 13%;
+        --s-end-3: 68%;
+        --c-4: hsla(37.42857142857143, 91%, 54%, 1);
+        --y-4: 58%;
+        --x-4: 60%;
+        --s-start-4: 8.828155981128067%;
+        --s-end-4: 41.32735517429097%;
+    }
+
+    100% {
+        --x-0: 1%;
+        --s-start-0: 5%;
+        --s-end-0: 49.62023409285044%;
+        --y-0: 1%;
+        --c-0: hsla(277.67645443187047, 87%, 44%, 1);
+        --y-1: 31%;
+        --s-start-1: 9%;
+        --s-end-1: 44.98440985376909%;
+        --x-1: -4%;
+        --c-1: hsla(331.2, 52%, 37%, 1);
+        --y-2: 5%;
+        --s-start-2: 5%;
+        --s-end-2: 52%;
+        --c-2: hsla(32.635983263598334, 100%, 46%, 1);
+        --x-2: 106%;
+        --y-3: 92%;
+        --x-3: 95%;
+        --c-3: hsla(237.23076923076923, 38%, 32%, 1);
+        --s-start-3: 13%;
+        --s-end-3: 68%;
+        --c-4: hsla(37.42857142857143, 91%, 54%, 1);
+        --y-4: 5%;
+        --x-4: -20%;
+        --s-start-4: 13%;
+        --s-end-4: 43.79640862337571%;
+    }
+}
+
+@property --x-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 98%
+}
+
+@property --s-start-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 5%
+}
+
+@property --s-end-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 61.257148618684276%
+}
+
+@property --y-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%
+}
+
+@property --c-0 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(297.529395608341, 94%, 30%, 1)
+}
+
+@property --y-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 61%
+}
+
+@property --s-start-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 9%
+}
+
+@property --s-end-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 55%
+}
+
+@property --x-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 116%
+}
+
+@property --c-1 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(331.2, 52%, 37%, 1)
+}
+
+@property --y-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 2%
+}
+
+@property --s-start-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 5%
+}
+
+@property --s-end-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 52%
+}
+
+@property --c-2 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(32.635983263598334, 100%, 46%, 1)
+}
+
+@property --x-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 32%
+}
+
+@property --y-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 7%
+}
+
+@property --x-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 24%
+}
+
+@property --c-3 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(237.23076923076923, 38%, 32%, 1)
+}
+
+@property --s-start-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 13%
+}
+
+@property --s-end-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 68%
+}
+
+@property --c-4 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(37.42857142857143, 91%, 54%, 1)
+}
+
+@property --y-4 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 58%
+}
+
+@property --x-4 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 60%
+}
+
+@property --s-start-4 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 8.828155981128067%
+}
+
+@property --s-end-4 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 41.32735517429097%
+}
+
+.hero-background {
+    --x-0: 98%;
+    --y-0: 0%;
+    --c-0: hsla(297.529395608341, 94%, 30%, 1);
+    --y-1: 61%;
+    --x-1: 116%;
+    --c-1: hsla(331.2, 52%, 37%, 1);
+    --y-2: 2%;
+    --c-2: hsla(32.635983263598334, 100%, 46%, 1);
+    --x-2: 32%;
+    --y-3: 7%;
+    --x-3: 24%;
+    --c-3: hsla(237.23076923076923, 38%, 32%, 1);
+    --c-4: hsla(37.42857142857143, 91%, 54%, 1);
+    --y-4: 58%;
+    --x-4: 60%;
+    ;
+    width: 100vw; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: hsla(237.23076923076923, 38%, 32%, 1);
+    background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0)), radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1), transparent var(--s-end-1)), radial-gradient(circle at var(--x-2) var(--y-2), var(--c-2) var(--s-start-2), transparent var(--s-end-2)), radial-gradient(circle at var(--x-3) var(--y-3), var(--c-3) var(--s-start-3), transparent var(--s-end-3)), radial-gradient(circle at var(--x-4) var(--y-4), var(--c-4) var(--s-start-4), transparent var(--s-end-4));
+    animation: hero-gradient-animation 10s linear infinite alternate;
+    background-blend-mode: normal, normal, normal, normal, normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+
+}
+
+.header {
+    height: 42rem;
+    margin: 0.5rem;
+
+    display: flex;
+}
+
+.planet1 {
+    width: 40rem;
+    height: 40rem;
+}
+
+.header1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.625rem;
+    animation-name: animacion-ent;
+    animation-duration: 2s;
+
+}
+
+.logo {
+    width: 18rem;
+    padding: 0.1rem;
+    display: flex;
+}
+
+.maintxt {
+    width: 56.25rem;
+    height: 31.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1.25rem;
+    margin-top: 0.625rem;
+}
+
+.txtw {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5rem;
+    font-style: normal;
+    color: white;
+}
+
+/* From Uiverse.io by StealthWorm */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    overflow: hidden;
+    height: 3rem;
+    background-size: 300% 300%;
+    cursor: pointer;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+    transition: 0.5s;
+    animation: gradient_301 5s ease infinite;
+    border: double 4px transparent;
+    background-image: linear-gradient(#212121, #212121),
+        linear-gradient(137.48deg,
+            #ffdb3b 10%,
+            #fe53bb 45%,
+            #8f51ea 67%,
+            #0044ff 87%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+#container-stars {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+}
+
+strong {
+    z-index: 2;
+    font-family: "Avalors Personal Use";
+    font-size: 0.75rem;
+    letter-spacing: 0.3125rem;
+    color: #ffffff;
+    text-shadow: 0 0 4px white;
+}
+
+#glow {
+    position: absolute;
+    display: flex;
+    width: 12rem;
+}
+
+.circle {
+    width: 100%;
+    height: 1.875rem;
+    filter: blur(2rem);
+    animation: pulse_3011 4s infinite;
+    z-index: -1;
+}
+
+.circle:nth-of-type(1) {
+    background: rgba(254, 83, 186, 0.636);
+}
+
+.circle:nth-of-type(2) {
+    background: rgba(142, 81, 234, 0.704);
+}
+
+.btn:hover #container-stars {
+    z-index: 1;
+    background-color: #212121;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.btn:active {
+    border: double 4px #fe53bb;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+}
+
+.btn:active .circle {
+    background: #fe53bb;
+}
+
+#stars {
+    position: relative;
+    background: transparent;
+    width: 200rem;
+    height: 200rem;
+}
+
+#stars::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
+}
+
+#stars::after {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+}
+
+#stars::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
+}
+
+#stars::before {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-135rem);
+    }
+}
+
+@keyframes animStarRotate {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
+
+@keyframes gradient_301 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulse_3011 {
+    0% {
+        transform: scale(0.75);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.75);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.mainimg {
+    width: 25rem;
+}
+
+    .hiscontainer {
+        padding: 0.625rem;
+        background-color: rgba(10, 10, 10, 0.3);
+        border-radius: 1.5625rem;
+        width: 100%;
+    }
+.sec2 {
+    display: flex;
+    justify-content: center;
+}
+
+.maintxt1 {
+    display: flex;
+    flex-direction: column;
+    width: 51.25rem;
+    height: 34.375rem;
+
+}
+
+.t1 {
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5rem;
+    font-style: normal;
+    color: white;
+    margin-top: 5px;
+
+
+}
+
+.p1 {
+    margin-top: -80px;
+    font-family: "Abel", sans-serif;
+    color: white;
+    font-size: 1.7rem;
+}
+
+.img1 {
+
+    display: flex;
+    align-items: center;
+
+}
+
+/* From Uiverse.io by Shakil-Babu */
+.btn1 {
+    background-color: #4823ac;
+    width: 9.375rem;
+    height: 3.125rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px dashed #4823ac;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+}
+
+.btn1 span:last-child {
+    display: none;
+}
+
+.btn1:hover {
+    transition: .4s;
+    border: 2px dashed #4823ac;
+    background-color: #fff;
+    color: #4823ac;
+}
+
+.btn1:active {
+    background-color: #87dbd0;
+}
+
+.container-orrery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(10, 10, 10, 0.3);
+    border-radius: 1.5625rem;
+
+}
+
+.svg-orrery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.orrery-svg {
+
+    margin-left: 0.3125rem;
+    width: 37.5rem;
+}
+
+
+.btn2 {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.btn2::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #9c0872 0%, #10078c 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+
+}
+
+.btn2:hover::before {
+    width: 9em;
+}
+
+.btn2:hover {
+    color: #ffffff;
+}
+.parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 6; }
+    .div2 { grid-area: 2 / 1 / 3 / 2; }
+    .div3 { grid-area: 3 / 1 / 4 / 2; margin-right: 15px; margin-bottom : 15px; }
+button>div>img:hover{
+    width: 70%;
+    cursor: pointer;
+}
+.button-cont > div > button:hover{
+    cursor: pointer;
+}
+.button-cont {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.625rem;
+
+}
+
+.orrery-items {
+
+    width: 31.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cjt1 {
+    width: 7.5rem;
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
+    justify-content: column;
+    align-items: center;
+
+}
+
+.txtplanets {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: white;
+}
+
+[popover] {
+    width: 50dvw;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    background-color: rgba(10, 10, 10, 0.3);
+    color: #fff;
+    padding: 10px;
+    transition: translate 0.7s ease-in-out,
+        display 0.7s ease-in-out allow-discrete;
+    translate: 0 -100dvh;
+}
+
+[popover]:popover-open {
+
+    translate: 0 -20dvh;
+}
+
+[popover]::backdrop {
+
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+@starting-style {
+    [popover]:popover-open {
+        translate: 0 -100dvh;
+    }
+}
+
+.txtdesc {
+    font-size: 15px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.btn4 {
+    background-color: transparent;
+    border-color: transparent;
+}
